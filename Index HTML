@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Alarm System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Online Student Result Alarm System</h1>
+    <form id="resultForm">
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="phone">Enter Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <button type="submit">Get Result Notification</button>
+    </form>
+
+    <script>
+        const form = document.getElementById('resultForm');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert("Result notification will be sent to your email and phone!");
+        });
+    </script>
+</body>
+</html>
